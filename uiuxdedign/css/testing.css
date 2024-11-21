@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Navbar Styles */
+  nav {
+    background-color: #c5b265;
+    /* Pretzels */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #33CC99;
+    /* Spring Meadow */
+    border-radius: 5px;
+  }
+  /* ==========================aboutr============================ */
+  h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+h4 {
+    color: #00796b; /* Dark Green for the headings */
+    font-weight: 600;
+}
+
+.about-course {
+    font-size: 1.1em;
+    color: #333;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-course li {
+    margin-bottom: 10px;
+}
+
+/* Styling for the Image */
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Unique and Bright Color Combination */
+.container {
+    background-color: #e0f7fa; /* Light Cyan Background */
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.container h2 {
+    color: #00796b; /* Dark Green Text for Course Heading */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-course {
+        padding-left: 0;
+    }
+}
+/* ====================================sikill you learn==================== */
+h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+h4 {
+    color: #00796b; /* Dark Green for titles */
+    font-weight: 600;
+}
+
+.skill-card {
+    background-color: #ffffff; /* White background for each card */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+    color: #00796b; /* Green color for icons */
+}
+
+.skill-card h4 {
+    margin-top: 15px;
+    font-size: 1.3em;
+    color: #00796b;
+}
+
+.skill-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #00796b;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        text-align: center;
+    }
+
+    .skill-card {
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        font-size: 1.1em;
+    }
+}
+/* ============================syll=============== */
+h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+.accordion-button {
+    background-color: #00796b; /* Dark Green Background */
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #004d40; /* Darker Green when open */
+    color: white;
+}
+
+.accordion-body {
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.accordion-button::after {
+    content: '\002B'; /* Plus symbol for collapsed state */
+    font-size: 1.5em;
+    color: white;
+}
+
+.accordion-button.collapsed::after {
+    content: '\2212'; /* Minus symbol for expanded state */
+    font-size: 1.5em;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+}
+/* ==================feature========================= */
+h2 {
+    color: #00796b; /* Dark green for title */
+    font-weight: bold;
+}
+
+.feature-card {
+    background-color: #ffffff; /* White background for each feature */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    color: #00796b; /* Green color for icons */
+}
+
+.feature-card h4 {
+    color: #00796b;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.feature-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        margin-bottom: 20px;
+    }
+}
+/* =========================cer========================================= */
+h2 {
+    color: #00796b; /* Dark green for the heading */
+    font-weight: bold;
+}
+
+h3 {
+    color: #00796b; /* Green for sub-heading */
+    font-weight: bold;
+}
+
+.certificate-container {
+    background-color: #ffffff; /* White background for certificate container */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.certificate-img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00796b; /* Green background for button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker green on hover */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+.imgpaa img{
+    height: 600px !important;
+}

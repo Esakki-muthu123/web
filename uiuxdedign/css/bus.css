@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Navbar Styles */
+  nav {
+    background-color: #c5b265;
+    /* Pretzels */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #33CC99;
+    /* Spring Meadow */
+    border-radius: 5px;
+  }
+  /* ================about=========================== */
+  h1 {
+    color: #004d40; /* Dark green */
+    font-weight: bold;
+}
+
+h2 {
+    color: #004d40;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+}
+
+.course-points {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+}
+
+.course-points li {
+    color: #00796b; /* Green */
+    padding: 10px;
+}
+
+.course-points li::before {
+    content: "✔️";
+    padding-right: 10px;
+}
+
+.img-fluid {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00796b; /* Green background for button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker green on hover */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .course-points li {
+        font-size: 1.1rem;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+}
+.im img{
+    width: 400px !important;
+}
+/* ================================skil===================== */
+h2 {
+    color: #004d40; /* Dark green for the heading */
+    font-weight: bold;
+}
+
+.skill-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box:hover {
+    transform: translateY(-10px); /* Hover effect to lift the box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    color: #00796b; /* Green color for icons */
+    margin-bottom: 20px;
+}
+
+.skill-box h4 {
+    color: #004d40; /* Dark green for the skill title */
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    font-size: 1rem;
+    color: #555; /* Light grey text for description */
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00796b; /* Green button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+    .skill-box {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .skill-box h4 {
+        font-size: 1.2rem;
+    }
+
+    .skill-box p {
+        font-size: 0.95rem;
+    }
+}
+/* =======================sy====================== */
+h2 {
+    color: #004d40; /* Dark green for headings */
+    font-weight: bold;
+}
+
+.accordion-button {
+    background-color: #00796b; /* Green button for accordion */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #004d40; /* Dark green when opened */
+    color: white;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.accordion-body {
+    background-color: #e0f2f1; /* Light green background for the body */
+    font-size: 1.05rem;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+/* ==========================feat=============================== */
+h2 {
+    color: #004d40; /* Dark Green */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Feature Cards */
+.feature-card {
+    background-color: #ffffff; /* White Background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    color: #00796b; /* Green color for icons */
+    margin-bottom: 15px;
+}
+
+.feature-card h4 {
+    color: #004d40; /* Dark Green */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #555;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    background-color: #00796b; /* Green button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker Green on hover */
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+    }
+}
+/* =================ce========================= */
+/* Heading Styling */
+h2 {
+    color: #004d40; /* Dark Green */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #00796b; /* Green color for sub-headings */
+    font-size: 1.5rem;
+}
+
+/* Certification Description */
+.certification-description {
+    background-color: #ffffff; /* White background for description */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certification-description p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.certification-description button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    background-color: #00796b; /* Green button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.certification-description button:hover {
+    background-color: #004d40; /* Dark Green on hover */
+}
+
+/* Certification Image */
+.certification-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certification-image p {
+    font-size: 1rem;
+    color: #555;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    background-color: #00796b; /* Green button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker Green on hover */
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .certification-description p {
+        font-size: 0.95rem;
+    }
+}

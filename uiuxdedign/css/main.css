@@ -1,0 +1,772 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family:Arial, Helvetica, sans-serif !important;
+}
+/* ===================================navtop=============================================== */
+
+.nav {
+  display: flex;
+  position: sticky !important; /* Sticky navbar */
+   /* Ensure the navbar is above other content */
+  align-items: center;
+  
+  color: white;
+  padding: 5px 30px;
+  
+  justify-content: space-between;
+  
+  
+}
+.navtopfull{
+  background-color: black !important;
+  
+}
+.heloooo{
+  z-index: 1000 !important;
+}
+.imgku img{
+  width: 70px;
+  border-radius: 50%;
+}
+.imgku a{
+  font-size: 20px;
+}
+.vts{
+  font-size: 30px !important;
+}
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-links li {
+  margin-left: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 7px;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+/* Dropdown Menu Styles */
+.nav-item.dropdown {
+  position: relative; /* Ensure the dropdown is positioned relative to the navbar */
+}
+.topthu{
+ 
+  width: 550px;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  padding-left: 20px;
+  
+
+}
+
+.nav-item .dropdown-menu {
+  background-color: #333; 
+  border: none; /* Remove dropdown border */
+  position: absolute;
+  top: 100% !important; /* Position it below the navbar item */
+  left: 20;
+  display: none; /* Hide the dropdown by default */
+  z-index: 1050; /* Ensure dropdown is above other content */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; /* Show the dropdown on hover */
+}
+
+.nav-item .dropdown-item {
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #444; 
+}
+
+.nav-item .dropdown-item:hover {
+  background-color:rgb(255, 230, 0); 
+}
+
+.navbar-nav .nav-item i {
+  margin-right: 5px; 
+}
+
+
+.nav-item .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Custom Styles for Navbar Hover Effects */
+.flex.cap {
+  gap: 50px;
+}
+
+.flex a:hover {
+  text-decoration: none;
+  color: yellow; 
+  border-radius: 20px;
+  padding: 7px 15px; 
+}
+
+/* Make the dropdown appear above the content */
+.navbar-nav .nav-item .dropdown-menu {
+  background-color: #333; 
+  border: none;
+  z-index: 1050; 
+  position: absolute;
+  
+  display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; 
+}
+
+/* ===============================Navigation Bar ===================================*/
+.navbar {
+    display: flex;
+    position: sticky !important;
+    top: 0 !important;
+   
+   z-index: 500 !important;
+    align-items: center;
+    background-color:rgb(9, 9, 68);
+    color: white;
+    padding: 15px 30px;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    
+    justify-content: center !important;
+    
+   
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav-links li {
+    margin-left: 40px;
+    
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 7px;
+}
+
+.nav-links a:hover {
+    color:black;
+}
+.flex.cap {
+    gap: 50px;
+}
+
+.flex a:hover{
+    text-decoration: none;
+    border:none;
+    background-color: yellow;
+    color: black !;
+    border-radius:20px ;
+    
+
+}
+/* ===========================corrosel============================= */
+/* Fullscreen Banner */
+.banner-section {
+    position: relative;
+    height: 100vh; /* Full height of viewport */
+  
+    background-color:rgb(9, 9, 68);
+    background-size: cover;
+    background-position: center;
+}
+.banimg{
+    position: absolute;
+    top: 120px;
+    right: 70px;
+    border-radius: 20px;
+}
+.banimg img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    overflow:  hidden !important;
+
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* Modal custom styling */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+}
+
+.btn-primary {
+    background-color: white;
+    border: none;
+}
+
+.lemb button{
+    border-radius: 50px !important;
+    background-color: white;
+    color: black;
+    border: none;
+}
+.lemb button:hover{
+    background-color: rgb(161, 161, 228);
+    color: white;
+    border: 2px solid white;
+}
+
+/* about us============== */
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #232F3E; /* AWS Blue */
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #d6d3d3;
+    margin-top: 40px !important;
+    
+    
+    
+    
+}
+
+.about-section h2 {
+    color: #232F3E;
+    font-size: 28px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-content img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.about-text ul li i {
+    color:#053d63 ;
+    margin-right: 10px;
+}
+.bgcch{
+  background-color: #053d63 !important;
+  color: white;
+}
+
+.cta-button {
+    background-color: rgb(241, 241, 83);
+    color:black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #053d63; /* AWS Orange */
+}
+.cta-button a{
+  text-decoration: none;
+}
+
+.modal-header {
+    background-color:yellow;
+    color:black;
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+}
+.imagepar  img{
+  width: 400px;
+}
+
+/* ==================================uiux design tools ====================== */
+
+.container {
+  margin-top: 40px;
+  width: 100% !important;
+
+}
+
+.tool-card {
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.hell{
+  
+  padding-top: 50px;
+}
+
+.pone :hover p{
+  color: white;
+}
+.pone :hover h3{
+  color: white;
+}
+.pone li{
+  color: white;
+}
+.tool-card:hover {
+  background-color: #053d63;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tool-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.tool-card:hover .tool-logo {
+  transform: scale(1.1);
+}
+
+.tool-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #004f78;
+}
+
+.tool-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.collapse-content {
+  margin-top: 15px;
+  color: #333;
+}
+
+.collapse-content li {
+  font-size: 16px;
+}
+/* ===============================================slybus=========3333333333333============ */
+.syllabus-header {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2rem;
+    width: 100% !important;
+}
+.fullsy{
+  background-color: #d6d3d3;
+  padding: 30px 0 50px 0;
+}
+.card-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-body {
+    background-color: #f8f9fa;
+}
+.syllabus-item {
+    font-size: 1.1rem;
+   
+}
+.syllabus-list {
+    margin-bottom: 20px;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+}
+.fullcon button{
+    text-decoration: none !important; 
+    background-color: #053d63;
+    color: white;
+}
+.non ul {
+  list-style-type: none !important;
+}
+.non ul i{
+  color: rgb(255, 196, 0);
+ 
+}
+
+/* ============================courde feature=================== */
+
+.carousel-item {
+  padding: 20px;
+}
+.keyfull{
+  background-color: #d6d3d3;
+  width: 100% !important;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  background-color: #b3cae7; /* Light blue background on hover */
+}
+
+.feature-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0056b3;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.feature-heading:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.feature-content {
+  color: #555;
+  font-size: 1rem;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color:rgb(255, 217, 0);
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  color: #0056b3; /* Icon color changes on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0056b3;
+}
+
+/* Optional: Custom carousel controls */
+.carousel-control-prev, .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-inner {
+  margin-top: 20px;
+}
+/* ==========================================certificate========================== */
+
+
+.container {
+  margin-top: 50px;
+  text-align: center;padding: 70px 0;
+}
+
+.heading {
+  color: #0044cc; /* Blue color */
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.content-text {
+  color: #ffcc00;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.download-btn {
+  background-color: #ffcc00; /* Yellow color */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #ff9900; /* Darker yellow on hover */
+}
+.contant{
+  background-color: #053d63;
+  padding: 30px;
+  border-radius: 40px;
+  width: 60%;
+  margin: auto;
+}
+.contant i{
+  color: white;
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.certificate-image {
+  margin-top: 30px;
+  max-width: 60%;
+  height: auto;
+}
+  /* ==================footer================= */
+ /* Footer Styling */
+footer {
+  background-color: #053d63 !important; /* Blue Background */
+  color: #FBBF24; /* Yellow Text */
+  padding: 30px 20px;
+  width: 100% !important; /* Ensure full width */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clear: both !important; /* Clear any float issues */
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100% !important; /* Ensure it spans the full width */
+}
+
+.footer-section {
+  width: 22%;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Ensure proper padding and margin calculation */
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section p, .footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #FBBF24; /* Yellow Links */
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 10px;
+  gap: 20px !important;
+}
+
+.social-icons li {
+  margin-right: 15px;
+}
+
+.social-icons .social-icon {
+  color: #FBBF24; /* Yellow Icons */
+  font-size: 20px;
+}
+
+.social-icons .social-icon:hover {
+  color: #1E3A8A; /* Blue Icons on Hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-section {
+    width: 45%; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    width: 100%; /* Stack the sections on smaller screens */
+    text-align: center;
+  }
+}
+/* =============================side icon=========================== */
+/* Fixed position sidebar for social media icons */
+.social-sidebar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.social-sidebar a {
+  display: block;
+  margin: 10px 0;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: #25d366; /* WhatsApp color by default */
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+/* Customize the colors for each social media */
+.social-sidebar .whatsapp {
+  background-color: #25d366; /* WhatsApp Green */
+}
+
+.social-sidebar .instagram {
+  background-color: #e4405f; /* Instagram Pink */
+}
+
+.social-sidebar .facebook {
+  background-color: #3b5998; /* Facebook Blue */
+}
+
+/* Hover effects */
+.social-sidebar a:hover {
+  transform: scale(1.1);
+}
+
+/* Scroll and positioning styles */
+.social-sidebar a {
+  transition: background-color 0.3s ease;
+}
